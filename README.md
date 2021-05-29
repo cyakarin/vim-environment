@@ -7,14 +7,18 @@ see [dein][1]'s requirements as this depends on dein.vim that manage vim plugins
 [1]:https://github.com/Shougo/dein.vim
 
 # How to set up
-1. make installation directory for the dein.vim
+1. make installation directory for the dein.vim:
 
-   $ mkdir ~/.vim/bundles
+     ```
+     $ mkdir ~/.vim/bundles
+     ```
 
-2. install the dein.vim for managing vim plugins
+2. install the dein.vim for managing vim plugins:
 
-   $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-   $ sh ./installer.sh ~/.vim/bundles
+     ```
+     $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+     $ sh ./installer.sh ~/.vim/bundles
+     ```
 
 3. install .vimrc on my home directory
 
