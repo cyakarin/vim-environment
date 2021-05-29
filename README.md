@@ -9,16 +9,12 @@ see [dein][1]'s requirements as this depends on dein.vim that manage vim plugins
 # How to set up
 1. make installation directory for the dein.vim
 
-~~~sh
-$ mkdir ~/.vim/bundles
-~~~
+   $ mkdir ~/.vim/bundles
 
 2. install the dein.vim for managing vim plugins
 
-~~~sh
-$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-$ sh ./installer.sh ~/.vim/bundles
-~~~
+   $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+   $ sh ./installer.sh ~/.vim/bundles
 
 3. install .vimrc on my home directory
 
@@ -27,3 +23,13 @@ $ sh ./installer.sh ~/.vim/bundles
 5. install plugins
 
    plugins will be installed automatically when vim started or open a file by vim.
+
+# Where can I look for plugins
+
+1. vim org
+
+   - https://www.vim.org/
+
+2. vim awesome
+
+   - https://vimawesome.com/
