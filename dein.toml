@@ -5,4 +5,7 @@ repo = 'Shougo/dein.vim'
 repo = 'tpope/vim-surround'
 
 [[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
 repo = 'scrooloose/nerdtree'
