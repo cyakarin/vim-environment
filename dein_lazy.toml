@@ -3,5 +3,9 @@ on_ft = 'ruby'
 repo = 'vim-ruby/vim-ruby'
 
 [[plugins]]
+on_ft = 'javascript'
+repo = 'pangloss/vim-javascript'
+
+[[plugins]]
 on_ft = 'toml'
 repo = 'cespare/vim-toml'
