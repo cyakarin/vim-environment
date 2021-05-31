@@ -9,3 +9,6 @@ repo = 'tpope/vim-commentary'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'w0rp/ale'
