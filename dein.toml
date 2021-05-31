@@ -12,3 +12,6 @@ repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'haishanh/night-owl.vim'

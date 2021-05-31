@@ -35,7 +35,6 @@ if dein#load_state(s:dein_dir)
 endif
 
 filetype plugin indent on
-syntax enable
 
 if dein#check_install()
   call dein#install()
@@ -45,3 +44,11 @@ call map(dein#check_clean(), "delete(v:val, 'rf')")
 
 " syntax checker
 let b:ale_fixers = {'ruby': ['rubocop']}
+
+" colorscheme
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable
+colorscheme night-owl
