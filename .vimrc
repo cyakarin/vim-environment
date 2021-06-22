@@ -1,5 +1,4 @@
 set expandtab
-set foldmethod=indent
 set hlsearch
 set ignorecase
 set list
@@ -34,21 +33,20 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-filetype plugin indent on
-
 if dein#check_install()
   call dein#install()
 endif
 call map(dein#check_clean(), "delete(v:val, 'rf')")
 " --- end dein.vim settings ---
 
+filetype plugin indent on
+
 " syntax checker
 let b:ale_fixers = {'ruby': ['rubocop']}
+" syntax checker
 
 " colorscheme
-if (has("termguicolors"))
- set termguicolors
-endif
-
+let g:molokai_original = 1
+colorscheme molokai
 syntax enable
-colorscheme night-owl
+" colorscheme

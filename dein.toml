@@ -15,3 +15,6 @@ repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'haishanh/night-owl.vim'
+
+[[plugins]]
+repo = 'tomasr/molokai'
