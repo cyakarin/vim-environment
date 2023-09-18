@@ -11,16 +11,19 @@ set smartindent
 set tabstop=2
 set title
 
-" --- begin dein.vim settings ---
-let s:vim_dir = expand('~/.vim')
-let s:dein_dir = s:vim_dir . '/bundles'
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-execute('set runtimepath^=' . s:dein_repo_dir)
+" Set Dein base path (required)
+let s:dein_base = '~/.cache/dein'
 
-if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir)
+" Set Dein source path (required)
+let s:dein_src = '~/.cache/dein/repos/github.com/Shougo/dein.vim'
 
+" Set Dein runtime path (required)
+execute 'set runtimepath+=' . s:dein_src
+
+call dein#begin(s:dein_base)
+
+  let s:vim_dir = expand('~/.vim')
   let s:toml = s:vim_dir . '/dein.toml'
   let s:lazy_toml = s:vim_dir . '/dein_lazy.toml'
 
@@ -29,9 +32,8 @@ if dein#load_state(s:dein_dir)
   " load plugins when you need them
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-  call dein#end()
-  call dein#save_state()
-endif
+  " call dein#save_state()
+call dein#end()
 
 if dein#check_install()
   call dein#install()
