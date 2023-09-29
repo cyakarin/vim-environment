@@ -17,15 +17,12 @@ see [dein][1]'s requirements as this depends on dein.vim that manage vim plugins
 2. make installation directory for the dein.vim:
 
      ```
-     $ mkdir ~/.vim/bundles
+     $ mkdir -p ~/.vim/bundles
      ```
 
 3. install the dein.vim for managing vim plugins:
 
-     ```
-     $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-     $ sh ./installer.sh ~/.vim/bundles
-     ```
+     https://github.com/Shougo/dein-installer.vim
 
 4. install .vimrc on my home directory
 
